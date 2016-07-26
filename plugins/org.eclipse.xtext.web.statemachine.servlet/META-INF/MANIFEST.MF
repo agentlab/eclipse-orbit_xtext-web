@@ -45,8 +45,4 @@ Import-Package: com.google.inject;version="1.3.0",
 Require-Bundle: org.eclipse.xtend.lib;bundle-version="2.11.0",
  org.eclipse.jetty.servlet;bundle-version="9.3.9",
  org.eclipse.xtext.web;bundle-version="1.0.0"
-Bundle-ClassPath: codemirror-5.13.2.jar,
- jquery-2.2.3.jar,
- requirejs-2.2.0.jar,
- requirejs-text-2.0.15.jar,
- .
+Bundle-ClassPath: .
