@@ -5,7 +5,6 @@ import org.eclipse.jetty.server.handler.ContextHandler
 import org.osgi.framework.BundleActivator
 import org.osgi.framework.BundleContext
 import org.eclipse.jetty.servlet.ServletHandler
-//import org.eclipse.jetty.server.*
 
 import org.eclipse.jetty.servlet.ServletContextHandler
 import ru.one.c.www.statemachine.servlet.MyXtextServlet
