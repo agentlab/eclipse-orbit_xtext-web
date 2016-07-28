@@ -6,7 +6,7 @@
  * http://www.eclipse.org/legal/epl-v10.html
  *******************************************************************************/
 
-define(['xtext/services/XtextService', 'jquery'], function(XtextService, jQuery) {
+define(['/resources/xtext/services/XtextService.js', 'jquery'], function(XtextService, jQuery) {
 	
 	/**
 	 * Service class for saving resources.

@@ -7,16 +7,16 @@
 
 define([
     'jquery',
-    'xtext/services/XtextService',
-	'xtext/services/LoadResourceService',
-	'xtext/services/SaveResourceService',
-	'xtext/services/HighlightingService',
-	'xtext/services/ValidationService',
-	'xtext/services/UpdateService',
-	'xtext/services/ContentAssistService',
-	'xtext/services/HoverService',
-	'xtext/services/OccurrencesService',
-	'xtext/services/FormattingService'
+    '/resources/xtext/services/XtextService.js',
+	'/resources/xtext/services/LoadResourceService.js',
+	'/resources/xtext/services/SaveResourceService.js',
+	'/resources/xtext/services/HighlightingService.js',
+	'/resources/xtext/services/ValidationService.js',
+	'/resources/xtext/services/UpdateService.js',
+	'/resources/xtext/services/ContentAssistService.js',
+	'/resources/xtext/services/HoverService.js',
+	'/resources/xtext/services/OccurrencesService.js',
+	'/resources/xtext/services/FormattingService.js'
 ], function(jQuery, XtextService, LoadResourceService, SaveResourceService, HighlightingService,
 		ValidationService, UpdateService, ContentAssistService, HoverService, OccurrencesService,
 		FormattingService) {

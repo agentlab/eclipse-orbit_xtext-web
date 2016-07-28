@@ -13,6 +13,10 @@ class MyXtextServlet extends XtextServlet {
 	
 	val List<ExecutorService> executorServices = newArrayList
 	val resourceBaseProvider = new ResourceBaseProviderImpl('./test-files')
+	
+	new() {
+		println("Yo-ho-ho!")
+	}
 
 	override init() {
 		super.init()

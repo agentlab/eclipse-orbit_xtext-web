@@ -74,12 +74,13 @@ define([
     'jquery',
     'codemirror',
     'codemirror/addon/hint/show-hint',
-    'xtext/compatibility',
-    'xtext/ServiceBuilder',
-	'xtext/CodeMirrorEditorContext',
+    '/resources/xtext/compatibility.js',
+    '/resources/xtext/ServiceBuilder.js',
+	'/resources/xtext/CodeMirrorEditorContext.js',
 	'codemirror/mode/javascript/javascript'
 ], function(jQuery, CodeMirror, ShowHint, compatibility, ServiceBuilder, EditorContext) {
 	
+	var baseUrl = '/dsl/';
 	var exports = {};
 	
 	/**
@@ -88,7 +89,7 @@ define([
 	 */
 	exports.createEditor = function(options) {
 		if (!options)
-			options = {};
+			options = {baseUrl};
 		
 		var query;
 		if (jQuery.type(options.parent) === 'string') {
