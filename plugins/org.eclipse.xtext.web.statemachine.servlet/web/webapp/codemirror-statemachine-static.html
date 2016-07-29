@@ -21,9 +21,9 @@
 				main: "lib/codemirror"
 			}]
 		});
-		require.config({
+/* 		require.config({
 		    baseUrl: '/dsl/'
-		});
+		}); */
 		require(["xtext/cm-mode-statemachine", "/resources/xtext/xtext-codemirror.js"], function(mode, xtext) {
 			xtext.createEditor();
 		});

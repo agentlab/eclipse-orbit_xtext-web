@@ -5,6 +5,7 @@ Bundle-SymbolicName: org.eclipse.xtext.web.statemachine.servlet;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: My Company
 Bundle-Activator: ru.one.c.www.activator.Activator
+Service-Component: OSGI-INF/component.xml
 Export-Package: org.eclipse.xtext.web.example.jetty,
  org.eclipse.xtext.web.example.jetty.resource,
  ru.one.c.www.statemachine.servlet
@@ -30,6 +31,7 @@ Import-Package: com.google.inject;version="1.3.0",
  org.eclipse.xtext.ide.editor.syntaxcoloring,
  org.eclipse.xtext.ide.labels,
  org.eclipse.xtext.service,
+ org.eclipse.xtext.web.dsl.launguage,
  org.eclipse.xtext.web.example.statemachine,
  org.eclipse.xtext.web.example.statemachine.ide,
  org.eclipse.xtext.web.example.statemachine.ide.contentassist.antlr,
