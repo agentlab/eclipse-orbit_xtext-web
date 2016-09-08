@@ -30,10 +30,7 @@ class Activator implements BundleActivator {
         props3.put("Web-ContextPath","/resources")
         props3.put("Jetty-ContextFilePath","handlers/jarHandler.xml")
         context.registerService(typeof(ContextHandler).getName() ,ch3, props3)
-        System.err.println("jar");
-        
-        
-        
+        System.err.println("jar");  
 	}
 	
 	override stop(BundleContext context) throws Exception {

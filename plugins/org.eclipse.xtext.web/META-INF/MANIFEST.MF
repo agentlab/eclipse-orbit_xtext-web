@@ -15,9 +15,7 @@ Export-Package: org.eclipse.xtext.web.server,
  org.eclipse.xtext.web.server.syntaxcoloring,
  org.eclipse.xtext.web.server.util,
  org.eclipse.xtext.web.server.validation
-Require-Bundle: org.eclipse.xtext.web.example.statemachine;bundle-version="2.11.0",
- org.eclipse.xtext.web.example.statemachine.ide;bundle-version="2.11.0",
- org.eclipse.xtext;bundle-version="2.11.0",
+Require-Bundle: org.eclipse.xtext;bundle-version="2.11.0",
  org.eclipse.xtend.lib;bundle-version="2.11.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
