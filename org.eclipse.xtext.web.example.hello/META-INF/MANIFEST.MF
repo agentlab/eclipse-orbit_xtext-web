@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.eclipse.xtext.web.example.hello
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: org.eclipse.xtext.web.example.hello; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.5.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: org.eclipse.xtext.web.example.hello,
+ org.eclipse.xtext.web.example.hello.formatting2,
+ org.eclipse.xtext.web.example.hello.generator,
+ org.eclipse.xtext.web.example.hello.hello,
+ org.eclipse.xtext.web.example.hello.hello.impl,
+ org.eclipse.xtext.web.example.hello.hello.util,
+ org.eclipse.xtext.web.example.hello.parser.antlr,
+ org.eclipse.xtext.web.example.hello.parser.antlr.internal,
+ org.eclipse.xtext.web.example.hello.scoping,
+ org.eclipse.xtext.web.example.hello.serializer,
+ org.eclipse.xtext.web.example.hello.services,
+ org.eclipse.xtext.web.example.hello.validation

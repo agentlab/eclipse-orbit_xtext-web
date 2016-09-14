@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="org.eclipse.xtext.web.statemachine.servlet">
+   <implementation class="org.eclipse.xtext.web.hello.setup.WebSetup"/>
+   <reference bind="setDsl" cardinality="1..1" interface="org.eclipse.xtext.web.dsl.launguage.IExecutorServiceProvider" name="IQuoteService" policy="static" unbind="unsetDsl"/>
+</scr:component>

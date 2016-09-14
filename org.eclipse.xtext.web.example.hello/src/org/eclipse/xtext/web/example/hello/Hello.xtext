@@ -1,0 +1,9 @@
+grammar org.eclipse.xtext.web.example.hello.Hello with org.eclipse.xtext.common.Terminals
+
+generate hello "http://www.eclipse.org/xtext/web/example/hello/Hello"
+
+Model:
+	greetings+=Greeting*;
+	
+Greeting:
+	'Hello' name=ID '!';
