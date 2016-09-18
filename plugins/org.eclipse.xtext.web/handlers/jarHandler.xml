@@ -10,12 +10,13 @@
 
   <Ref refid="res">
     <Call id="base" name="addPath">
-      <Arg>/static/jar/</Arg>
+      <!-- <Arg>/static/jar/</Arg> -->
+      <Arg>/src/main/jar</Arg>
     </Call>
   </Ref>
   
 
-  <Set name="contextPath">/unset</Set>
+  <!-- <Set name="contextPath">/unset</Set> -->
   
   
   <!--  <Call name="setAttribute">

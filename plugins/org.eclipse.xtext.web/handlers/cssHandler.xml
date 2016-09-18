@@ -10,11 +10,11 @@
 
   <Ref refid="res">
     <Call id="base" name="addPath">
-      <Arg>/static/css/</Arg>
+      <!-- <Arg>/static/css/</Arg> -->
+      <Arg>/src/main/css</Arg>
     </Call>
   </Ref>
 
-  <Set name="contextPath">/unset</Set>
 
   <!-- Set up the base resource for static files relative to inside bundle -->
   <Set name="baseResource">

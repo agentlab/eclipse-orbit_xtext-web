@@ -10,7 +10,8 @@
 
   <Ref refid="res">
     <Call id="base" name="addPath">
-      <Arg>/static/js/</Arg>
+      <!-- <Arg>/static/js/</Arg> -->
+      <Arg>/src/main/js/</Arg>
     </Call>
   </Ref>
 
