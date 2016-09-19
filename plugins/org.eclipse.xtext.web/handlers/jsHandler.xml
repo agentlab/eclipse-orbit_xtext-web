@@ -15,7 +15,7 @@
     </Call>
   </Ref>
 
-  <Set name="contextPath">/unset</Set>
+  <!-- <Set name="contextPath">/unset</Set> -->
 
   <!-- Set up the base resource for static files relative to inside bundle -->
   <Set name="baseResource">

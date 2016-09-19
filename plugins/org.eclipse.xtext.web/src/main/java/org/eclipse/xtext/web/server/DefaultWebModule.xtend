@@ -21,7 +21,7 @@ import org.eclipse.xtext.web.server.generator.IContentTypeProvider
  * passed executor services. If a provider for executor services is given, it must provide a
  * new instance for each invocation.
  */
-public class DefaultWebModule extends AbstractGenericModule {
+class DefaultWebModule extends AbstractGenericModule {
 	
 	val ExecutorService executorService
 	val ExecutorService executorServiceWithDocumentLock

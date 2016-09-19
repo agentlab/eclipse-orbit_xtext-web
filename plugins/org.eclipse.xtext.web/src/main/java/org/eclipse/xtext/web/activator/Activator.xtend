@@ -5,7 +5,7 @@ import java.util.Hashtable
 import org.eclipse.jetty.server.handler.ContextHandler
 import org.osgi.framework.BundleActivator
 import org.osgi.framework.BundleContext
-
+import org.osgi.framework.Bundle
 
 class Activator implements BundleActivator {
 	
@@ -31,6 +31,7 @@ class Activator implements BundleActivator {
         props3.put("Jetty-ContextFilePath","handlers/jarHandler.xml")
         context.registerService(typeof(ContextHandler).getName() ,ch3, props3)
         System.err.println("jar");  
+        
 	}
 	
 	override stop(BundleContext context) throws Exception {

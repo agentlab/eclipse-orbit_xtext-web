@@ -3,7 +3,6 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Web
 Bundle-SymbolicName: org.eclipse.xtext.web;singleton:=true
 Bundle-Version: 1.0.0.qualifier
-Bundle-Activator: org.eclipse.xtext.web.activator.Activator
 Export-Package: org.eclipse.xtext.web.server,
  org.eclipse.xtext.web.server.contentassist,
  org.eclipse.xtext.web.server.formatting,

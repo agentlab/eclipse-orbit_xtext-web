@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Activator
+Bundle-SymbolicName: org.eclipse.xtext.web.activator
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: org.eclipse.xtext.web.activator.Activator
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: org.eclipse.jetty.server.handler;version="9.3.10",
+ org.osgi.framework;version="1.3.0"
+Bundle-ActivationPolicy: lazy
