@@ -10,18 +10,15 @@
 
   <Ref refid="res">
     <Call id="base" name="addPath">
-      <!-- <Arg>/static/js/</Arg> -->
       <Arg>src/main/js/</Arg>
     </Call>
   </Ref>
-
-  <!-- <Set name="contextPath">/unset</Set> -->
 
   <!-- Set up the base resource for static files relative to inside bundle -->
   <Set name="baseResource">
      <Ref refid="base"/>
   </Set>
-  
+
   <Set name="handler">
     <New class="org.eclipse.jetty.server.handler.ResourceHandler">
       <Set name="cacheControl">max-age=3600,public</Set>

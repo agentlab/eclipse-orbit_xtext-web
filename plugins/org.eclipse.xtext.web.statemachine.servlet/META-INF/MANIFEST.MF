@@ -4,7 +4,7 @@ Bundle-Name: ru.one.c.www.jetty
 Bundle-SymbolicName: org.eclipse.xtext.web.statemachine.servlet;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: My Company
-Bundle-Activator: ru.one.c.www.activator.Activator
+Bundle-Activator: org.eclipse.xtext.web.statemachine.servlet.activator.Activator
 Service-Component: OSGI-INF/component.xml
 Export-Package: org.eclipse.xtext.web.example.jetty,
  org.eclipse.xtext.web.example.jetty.resource,

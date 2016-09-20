@@ -40,7 +40,6 @@
       storageURI="scope://Workspace"/>
   <setupTask
       xsi:type="setup:VariableTask"
-      id=""
       name="orbit.clone.location"
       label="Git repositories location">
     <choice
@@ -125,6 +124,10 @@
           <value>false</value>
         </detail>
       </annotation>
+      <requirement
+          name="org.antlr.runtime"/>
+      <requirement
+          name="org.eclipse.swt.dummyfragments.feature.group"/>
       <requirement
           name="org.eclipse.equinox.sdk.feature.group"/>
       <requirement
@@ -232,6 +235,8 @@
             url="http://download.eclipse.org/tools/orbit/downloads/drops/R20160520211859/repository/"/>
         <repository
             url="http://agentlab.ru/p2/xtext/2.11.0/"/>
+        <repository
+            url="https://eclipseguru.github.io/missing-swt-fragments/"/>
       </repositoryList>
       <repositoryList
           name="Mars">
