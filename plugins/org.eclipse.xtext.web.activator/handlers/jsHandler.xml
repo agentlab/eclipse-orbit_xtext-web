@@ -5,13 +5,13 @@
 
   <!-- Get root for static content, could be on file system or this bundle -->
   <Call id="res" class="org.eclipse.jetty.util.resource.Resource" name="newResource">
-    <Arg><Property name="bundle.root"/></Arg>
+    <Arg>platform:/plugin/org.eclipse.xtext.web/</Arg>
   </Call>
 
   <Ref refid="res">
     <Call id="base" name="addPath">
       <!-- <Arg>/static/js/</Arg> -->
-      <Arg>/js/</Arg>
+      <Arg>src/main/js/</Arg>
     </Call>
   </Ref>
 

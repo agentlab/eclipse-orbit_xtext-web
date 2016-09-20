@@ -1,6 +1,7 @@
 xtend-gen
 bin
 target
+src/main/xtend-gen
 
 *.class
 
