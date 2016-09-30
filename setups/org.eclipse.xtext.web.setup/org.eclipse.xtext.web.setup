@@ -114,11 +114,48 @@
         </detail>
       </annotation>
       <requirement
-          name="org.antlr.runtime"/>
+          name="ch.qos.logback.classic"/>
+      <requirement
+          name="ch.qos.logback.core"/>
+      <requirement
+          name="ch.qos.logback.slf4j"/>
+      <requirement
+          name="com.google.gson"/>
+      <requirement
+          name="com.google.gson.source"/>
+      <requirement
+          name="com.google.inject.assistedinject"/>
+      <requirement
+          name="com.google.inject.multibindings"/>
+      <requirement
+          name="com.google.inject.multibindings.source"/>
+      <requirement
+          name="com.google.inject"/>
+      <requirement
+          name="com.ibm.icu"/>
+      <requirement
+          name="javax.annotation"/>
+      <requirement
+          name="javax.persistence"/>
+      <requirement
+          name="javax.mail"/>
+      <requirement
+          name="org.antlr.runtime"
+          versionRange="[3.2.0,3.2.1)"/>
+      <requirement
+          name="org.apache.log4j"/>
+      <requirement
+          name="org.eclipse.emf.common.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.codegen.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.mwe2.launcher.feature.group"/>
       <requirement
           name="org.eclipse.equinox.sdk.feature.group"/>
       <requirement
           name="org.eclipse.equinox.http.jetty"/>
+      <requirement
+          name="org.eclipse.jdt.feature.group"/>
       <requirement
           name="org.eclipse.jetty.xml"/>
       <requirement
@@ -142,71 +179,20 @@
       <requirement
           name="org.eclipse.jetty.annotations.source"/>
       <requirement
-          name="javax.annotation"/>
-      <requirement
-          name="javax.persistence"/>
-      <requirement
-          name="javax.mail"/>
-      <requirement
           name="org.eclipse.jetty.osgi.boot"/>
       <requirement
           name="org.eclipse.jetty.osgi-servlet-api"/>
       <requirement
           name="org.eclipse.jetty.osgi.httpservice"/>
       <requirement
-          name="ch.qos.logback.classic"/>
+          name="org.eclipse.swt.dummyfragments.feature.group"/>
       <requirement
-          name="ch.qos.logback.core"/>
+          name="org.eclipse.xtext.sdk.feature.group"
+          versionRange="[2.11.0,2.12.0)"/>
       <requirement
-          name="ch.qos.logback.slf4j"/>
+          name="org.slf4j.api"/>
       <requirement
-          name="org.eclipse.xtext.xbase"/>
-      <requirement
-          name="org.eclipse.xtext"/>
-      <requirement
-          name="org.eclipse.xtext.ecore"/>
-      <requirement
-          name="org.eclipse.xtext.util"/>
-      <requirement
-          name="org.eclipse.xtext.xbase.lib"/>
-      <requirement
-          name="org.eclipse.xtext.ide"/>
-      <requirement
-          name="org.eclipse.xtend.lib.macro"/>
-      <requirement
-          name="org.eclipse.xtend.lib"/>
-      <requirement
-          name="org.eclipse.xtext.xbase.ide"/>
-      <requirement
-          name="org.eclipse.xtext.xbase.ide"/>
-      <requirement
-          name="org.eclipse.xtext.xtext.generator"/>
-      <requirement
-          name="org.eclipse.emf.mwe2.launch"/>
-      <requirement
-          name="com.google.inject.assistedinject"/>
-      <requirement
-          name="com.google.inject.multibindings"/>
-      <requirement
-          name="com.google.inject.multibindings.source"/>
-      <requirement
-          name="com.google.inject"/>
-      <requirement
-          name="org.apache.log4j"/>
-      <requirement
-          name="org.slf4j.log4j.source"/>
-      <requirement
-          name="com.ibm.icu"/>
-      <requirement
-          name="org.eclipse.emf"/>
-      <requirement
-          name="org.eclipse.emf.codegen"/>
-      <requirement
-          name="org.eclipse.emf.codegen.ecore"/>
-      <requirement
-          name="com.google.gson"/>
-      <requirement
-          name="com.google.gson.source"/>
+          name="org.slf4j.ext"/>
       <sourceLocator
           rootFolder="${git.clone.location}"
           locateNestedProjects="true"/>
@@ -215,13 +201,13 @@
         <repository
             url="http://download.eclipse.org/releases/neon"/>
         <repository
-            url="http://download.eclipse.org/cbi/updates/license"/>
-        <repository
             url="http://download.eclipse.org/jetty/updates/jetty-bundles-9.x/9.3.10.v20160621"/>
         <repository
             url="http://download.eclipse.org/tools/orbit/downloads/drops/R20160520211859/repository/"/>
         <repository
             url="http://agentlab.ru/p2/xtext/2.11.0/"/>
+        <repository
+            url="http://agentlab.ru/p2/orbit/missing-swt-fragments/"/>
       </repositoryList>
       <repositoryList
           name="Mars">
