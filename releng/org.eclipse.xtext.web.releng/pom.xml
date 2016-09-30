@@ -26,8 +26,8 @@
         <module>../../plugins/org.eclipse.xtext.web.example.hello</module>
         <module>../../plugins/org.eclipse.xtext.web.example.hello.ide</module>
         <module>../../plugins/org.eclipse.xtext.web.example.hello.servlet</module>
-        <module>../../org.eclipse.xtext.web.activator</module>
-		<module>../../org.eclipse.xtext.web.dsl.launguage</module>
+        <module>../../plugins/org.eclipse.xtext.web.activator</module>
+		<module>../../plugins/org.eclipse.xtext.web.dsl.launguage</module>
         
         
 		<!--<module>../../features/org.eclipse.xtext.web.server.feature</module>
@@ -50,23 +50,6 @@
 							<version>1.0.0-SNAPSHOT</version>
 						</artifact>
 					</target>
-					<environments>
-<!--						<environment>-->
-<!--							<os>win32</os>-->
-<!--							<ws>win32</ws>-->
-<!--							<arch>x86_64</arch>-->
-<!--						</environment>-->
-<!--						<environment>-->
-<!--							<os>linux</os>-->
-<!--							<ws>gtk</ws>-->
-<!--							<arch>x86_64</arch>-->
-<!--						</environment>-->
-						<environment>
-							<os>macosx</os>
-							<ws>cocoa</ws>
-							<arch>x86_64</arch>
-						</environment>
-					</environments>
 				</configuration>
 			</plugin>
 			<plugin>
