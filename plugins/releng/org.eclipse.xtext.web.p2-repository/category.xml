@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/org.eclipse.xtext.web.launguage_2.11.0.qualifier.jar" id="org.eclipse.xtext.web.launguage" version="2.11.0.qualifier">
+      <category name="Xtext"/>
+   </feature>
+   <category-def name="Xtext" label="Xtext"/>
+</site>
