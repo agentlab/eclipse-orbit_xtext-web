@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/org.eclipse.xtext.web.feature_1.0.0.qualifier.jar" id="org.eclipse.xtext.web.feature" version="1.0.0.qualifier"/>
+</site>
