@@ -4,23 +4,23 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta http-equiv="Content-Language" content="en-us">
 	<title>Xtext-Web State Machine Example (Multiple Resources)</title>
-	<link rel="stylesheet" type="text/css" href="webjars/codemirror/5.13.2/lib/codemirror.css" />
-	<link rel="stylesheet" type="text/css" href="webjars/codemirror/5.13.2/addon/hint/show-hint.css" />
-	<link rel="stylesheet" type="text/css" href="xtext/xtext-codemirror.css" />
+	<link rel="stylesheet" type="text/css" href="/resources/webjars/codemirror/5.13.2/lib/codemirror.css" />
+	<link rel="stylesheet" type="text/css" href="/resources/webjars/codemirror/5.13.2/addon/hint/show-hint.css" />
+	<link rel="stylesheet" type="text/css" href="/resources/xtext/xtext-codemirror.css" />
 	<link rel="stylesheet" type="text/css" href="style.css" />
-	<script src="webjars/requirejs/2.2.0/require.min.js"></script>
+	<script src="/resources/webjars/requirejs/2.2.0/require.min.js"></script>
 	<script type="text/javascript">
 		require.config({
 			paths: {
-				"jquery": "webjars/jquery/2.2.3/jquery.min"
+				"jquery": "/resources/webjars/jquery/2.2.3/jquery.min"
 			},
 			packages: [{
 				name: "codemirror",
-				location: "webjars/codemirror/5.13.2",
+				location: "/resources/webjars/codemirror/5.13.2",
 				main: "lib/codemirror"
-			}]
+			}],
 		});
-		require(["xtext/cm-mode-statemachine", "xtext/xtext-codemirror"], function(mode, xtext) {
+		require(["xtext/cm-mode-statemachine", "/resources/xtext/xtext-codemirror.js"], function(mode, xtext) {
 			var editors = xtext.createEditor({
 				loadFromServer: false,
 				enableFormattingAction: true

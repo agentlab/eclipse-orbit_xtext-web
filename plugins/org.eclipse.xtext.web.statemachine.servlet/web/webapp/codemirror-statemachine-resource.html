@@ -20,9 +20,9 @@
 				main: "lib/codemirror"
 			}]
 		});
-		require.config({
+/* 		require.config({
 		    baseUrl: '/dsl/'
-		});
+		}); */
 		require(["xtext/cm-mode-statemachine", "/resources/xtext/xtext-codemirror.js"], function(mode, xtext) {
 			var editor = xtext.createEditor();
 			$("#save-button").click(function() {
@@ -32,7 +32,7 @@
 				editor.xtextServices.revertResource();
 			});
 			$("#generate-button").click(function() {
-				window.open('http://' + location.host + '/dsl/xtext-service/generate?resource=' + editor.xtextServices.options.resourceId);
+				window.open('http://' + location.host + 'xtext-service/generate?resource=' + editor.xtextServices.options.resourceId);
 			});
 			$("#change-resource").change(function() {
 				var resourceId = $("#change-resource option:selected").attr("value");

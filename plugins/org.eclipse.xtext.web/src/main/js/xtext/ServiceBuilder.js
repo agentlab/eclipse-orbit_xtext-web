@@ -20,7 +20,9 @@ define([
 ], function(jQuery, XtextService, LoadResourceService, SaveResourceService, HighlightingService,
 		ValidationService, UpdateService, ContentAssistService, HoverService, OccurrencesService,
 		FormattingService) {
-	
+
+
+
 	/**
 	 * Builder class for the Xtext services.
 	 */
@@ -39,7 +41,7 @@ define([
 		var self = this;
 		if (!options.serviceUrl) {
 			if (!options.baseUrl)
-				options.baseUrl = '/';
+				options.baseUrl = '/dsl/'; // options.baseUrl = '/'
 			else if (options.baseUrl.charAt(0) != '/')
 				options.baseUrl = '/' + options.baseUrl;
 			options.serviceUrl = window.location.protocol + '//' + window.location.host + options.baseUrl + 'xtext-service';
@@ -73,7 +75,7 @@ define([
 				options.resourceId = randomId + '.' + options.xtextLang;
 			}
 		}
-		
+
 		if (this.setupSyntaxHighlighting) {
 			this.setupSyntaxHighlighting();
 		}
@@ -158,7 +160,7 @@ define([
 				return services.generatorService.invoke(editorContext, ServiceBuilder.mergeOptions(addParams, options));
 			}
 		}
-		
+
 		if (options.dirtyElement) {
 			var doc = options.document || document;
 			var dirtyElement;
@@ -176,7 +178,7 @@ define([
 					dirtyElement.removeClass(dirtyStatusClass);
 			});
 		}
-		
+
 		services.successListeners = [];
 		services.errorListeners = [function(serviceType, severity, message, requestData) {
 			if (options.showErrorDialogs)
@@ -185,7 +187,7 @@ define([
 				console.log('Xtext service \'' + serviceType + '\' failed: ' + message);
 		}];
 	}
-	
+
 	/**
 	 * Change the resource associated with this service builder.
 	 */
@@ -207,7 +209,7 @@ define([
 			services.loadResource();
 		}
 	}
-	
+
 	/**
 	 * Create a copy of the given object.
 	 */
@@ -219,7 +221,7 @@ define([
 		}
 		return copy;
 	}
-	
+
 	/**
 	 * Translate an HTML attribute name to a JS option name.
 	 */
@@ -234,7 +236,7 @@ define([
 		}
 		return undefined;
 	}
-	
+
 	/**
 	 * Copy all default options into the given set of additional options.
 	 */
@@ -249,7 +251,7 @@ define([
 			return ServiceBuilder.copy(defaultOptions);
 		}
 	}
-	
+
 	/**
 	 * Merge all properties of the given parent element with the given default options.
 	 */
@@ -267,6 +269,6 @@ define([
 		}
 		return options;
 	}
-	
+
 	return ServiceBuilder;
 });

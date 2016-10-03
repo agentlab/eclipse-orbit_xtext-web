@@ -7,7 +7,7 @@
  *******************************************************************************/
 
 define(['/resources/xtext/services/XtextService.js', 'jquery'], function(XtextService, jQuery) {
-	
+
 	/**
 	 * Service class for loading resources. The resulting text is passed to the editor context.
 	 */
@@ -16,14 +16,14 @@ define(['/resources/xtext/services/XtextService.js', 'jquery'], function(XtextSe
 	};
 
 	LoadResourceService.prototype = new XtextService();
-	
+
 	LoadResourceService.prototype._initServerData = function(serverData, editorContext, params) {
 		return {
 			suppressContent: true,
 			httpMethod: this._serviceType == 'revert' ? 'POST' : 'GET'
 		};
 	};
-	
+
 	LoadResourceService.prototype._getSuccessCallback = function(editorContext, params, deferred) {
 		return function(result) {
 			editorContext.setText(result.fullText);

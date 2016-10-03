@@ -7,7 +7,7 @@
  *******************************************************************************/
 
 define(['/resources/xtext/services/XtextService.js', 'jquery'], function(XtextService, jQuery) {
-	
+
 	/**
 	 * Service class for updating the server-side representation of a resource.
 	 * This service only makes sense with a stateful server, where an update request is sent
@@ -18,7 +18,7 @@ define(['/resources/xtext/services/XtextService.js', 'jquery'], function(XtextSe
 		this.initialize(serviceUrl, 'update', resourceId, this);
 		this._completionCallbacks = [];
 	};
-	
+
 	UpdateService.prototype = new XtextService();
 
 	/**
@@ -46,7 +46,7 @@ define(['/resources/xtext/services/XtextService.js', 'jquery'], function(XtextSe
 			result.deltaReplaceLength = s1length - start;
 			return;
 		}
-		
+
 		var end1 = s1length - 1, end2 = s2length - 1;
 		while (end1 >= start && end2 >= start && s1.charCodeAt(end1) === s2.charCodeAt(end2)) {
 			end1--;
@@ -55,7 +55,7 @@ define(['/resources/xtext/services/XtextService.js', 'jquery'], function(XtextSe
 		result.deltaText = s2.substring(start, end2 + 1);
 		result.deltaReplaceLength = end1 - start + 1;
 	};
-	
+
 	/**
 	 * Invoke all completion callbacks and clear the list afterwards.
 	 */
@@ -68,7 +68,7 @@ define(['/resources/xtext/services/XtextService.js', 'jquery'], function(XtextSe
 			callback(params);
 		}
 	}
-	
+
 	/**
 	 * Add a callback to be invoked when the service call has completed.
 	 */
@@ -86,7 +86,7 @@ define(['/resources/xtext/services/XtextService.js', 'jquery'], function(XtextSe
 			this.addCompletionCallback(function() { self.invoke(editorContext, params, deferred) });
 			return deferred.promise();
 		}
-		
+
 		var serverData = {
 			contentType: params.contentType
 		};
@@ -114,7 +114,7 @@ define(['/resources/xtext/services/XtextService.js', 'jquery'], function(XtextSe
 		self.sendRequest(editorContext, {
 			type: 'PUT',
 			data: serverData,
-			
+
 			success: function(result) {
 				if (result.conflict) {
 					// The server has lost its session state and the resource is loaded from the server
@@ -134,7 +134,7 @@ define(['/resources/xtext/services/XtextService.js', 'jquery'], function(XtextSe
 				}
 				deferred.resolve(result);
 			},
-			
+
 			error: function(xhr, textStatus, errorThrown) {
 				if (xhr.status == 404 && !params.loadFromServer && knownServerState.text !== undefined) {
 					// The server has lost its session state and the resource is not loaded from the server
@@ -146,13 +146,13 @@ define(['/resources/xtext/services/XtextService.js', 'jquery'], function(XtextSe
 				}
 				deferred.reject(errorThrown);
 			},
-			
+
 			complete: self.onComplete.bind(self)
 		}, true);
 		return deferred.promise().always(function() {
 			knownServerState.updateInProgress = false;
 		});
 	};
-	
+
 	return UpdateService;
 });

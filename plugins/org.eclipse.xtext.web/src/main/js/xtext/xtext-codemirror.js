@@ -79,10 +79,10 @@ define([
 	'/resources/xtext/CodeMirrorEditorContext.js',
 	'codemirror/mode/javascript/javascript'
 ], function(jQuery, CodeMirror, ShowHint, compatibility, ServiceBuilder, EditorContext) {
-	
+
 	var baseUrl = '/dsl/';
 	var exports = {};
-	
+
 	/**
 	 * Create one or more Xtext editor instances configured with the given options.
 	 * The return value is either a CodeMirror editor or an array of CodeMirror editors.
@@ -90,7 +90,7 @@ define([
 	exports.createEditor = function(options) {
 		if (!options)
 			options = {baseUrl};
-		
+
 		var query;
 		if (jQuery.type(options.parent) === 'string') {
 			query = jQuery('#' + options.parent, options.document);
@@ -103,7 +103,7 @@ define([
 			if (query.length == 0)
 				query = jQuery('.xtext-editor', options.document);
 		}
-		
+
 		var editors = [];
 		query.each(function(index, parent) {
 			var editorOptions = ServiceBuilder.mergeParentOptions(parent, options);
@@ -112,17 +112,17 @@ define([
 			var editor = CodeMirror(function(element) {
 				jQuery(parent).empty().append(element);
 			}, editorOptions);
-			
+
 			exports.createServices(editor, editorOptions);
 			editors[index] = editor;
 		});
-		
+
 		if (editors.length == 1)
 			return editors[0];
 		else
 			return editors;
 	}
-	
+
 	function CodeMirrorServiceBuilder(editor, xtextServices) {
 		this.editor = editor;
 		xtextServices.editorContext._highlightingMarkers = [];
@@ -131,7 +131,7 @@ define([
 		ServiceBuilder.call(this, xtextServices);
 	}
 	CodeMirrorServiceBuilder.prototype = new ServiceBuilder();
-		
+
 	/**
 	 * Configure Xtext services for the given editor. The editor does not have to be created
 	 * with createEditor(options).
@@ -150,7 +150,7 @@ define([
 		editor.xtextServices = xtextServices;
 		return xtextServices;
 	}
-	
+
 	/**
 	 * Remove all services and listeners that have been previously created with createServices(editor, options).
 	 */
@@ -191,7 +191,7 @@ define([
 		}
 		delete editor.xtextServices;
 	}
-	
+
 	/**
 	 * Syntax highlighting (without semantic highlighting).
 	 */
@@ -202,7 +202,7 @@ define([
 			this.editor.setOption('mode', 'xtext/' + options.xtextLang);
 		}
 	}
-		
+
 	/**
 	 * Document update service.
 	 */
@@ -228,7 +228,7 @@ define([
 			services.modelChangeListener({_xtext_init: true});
 		this.editor.on('changes', services.modelChangeListener);
 	}
-	
+
 	/**
 	 * Persistence services: load, save, and revert.
 	 */
@@ -243,7 +243,7 @@ define([
 			this.editor.addKeyMap(services.saveKeyMap);
 		}
 	}
-		
+
 	/**
 	 * Content assist service.
 	 */
@@ -281,7 +281,7 @@ define([
 		}};
 		this.editor.addKeyMap(services.contentAssistKeyMap);
 	}
-		
+
 	/**
 	 * Semantic highlighting service.
 	 */
@@ -309,7 +309,7 @@ define([
 			}
 		});
 	}
-	
+
 	var annotationWeight = {
 		error: 30,
 		warning: 20,
@@ -321,7 +321,7 @@ define([
 		else
 			return 0;
 	}
-	
+
 	CodeMirrorServiceBuilder.prototype._clearAnnotations = function(annotations) {
 		var editor = this.editor;
 		for (var i = 0; i < annotations.length; i++) {
@@ -332,7 +332,7 @@ define([
 			}
 		}
 	}
-	
+
 	CodeMirrorServiceBuilder.prototype._refreshAnnotations = function(annotations) {
 		var editor = this.editor;
 		for (var i = 0; i < annotations.length; i++) {
@@ -345,7 +345,7 @@ define([
 			}
 		}
 	}
-	
+
 	/**
 	 * Validation service.
 	 */
@@ -399,7 +399,7 @@ define([
 			self._refreshAnnotations(validationAnnotations);
 		});
 	}
-		
+
 	/**
 	 * Occurrences service.
 	 */
@@ -447,7 +447,7 @@ define([
 		}
 		editor.on('cursorActivity', services.cursorActivityListener);
 	}
-		
+
 	/**
 	 * Formatting service.
 	 */
@@ -462,7 +462,7 @@ define([
 			this.editor.addKeyMap(services.formatKeyMap);
 		}
 	}
-	
+
 	return exports;
 });
 
