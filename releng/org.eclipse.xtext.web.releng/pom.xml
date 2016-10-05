@@ -17,7 +17,10 @@
 	
 	<modules>
 		<module>../org.eclipse.xtext.web.target</module>
-		
+        <module>../../site/org.eclipse.xtext.web.site</module>
+        
+        <module>../../features</module>
+
 		<module>../../plugins/org.eclipse.xtext.web</module>
 		<module>../../plugins/org.eclipse.xtext.web.servlet</module>
 		<module>../../plugins/org.eclipse.xtext.web.example.statemachine</module>
@@ -28,7 +31,7 @@
         <module>../../plugins/org.eclipse.xtext.web.example.hello.servlet</module>
         <module>../../plugins/org.eclipse.xtext.web.activator</module>
 		<module>../../plugins/org.eclipse.xtext.web.dsl.launguage</module>
-        
+
         
 		<!--<module>../../features/org.eclipse.xtext.web.server.feature</module>
 		<module>../../features/org.eclipse.xtext.web.server.sdk.feature</module>
