@@ -26,6 +26,8 @@
     
     <modules>
         <module>org.eclipse.xtext.web.feature</module>
+<!--        <module>org.eclipse.xtext.web.feature.hello</module>-->
+<!--        <module>org.eclipse.xtext.web.feature.statemachine</module>-->
     </modules>
     
 </project>
