@@ -13,6 +13,19 @@
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 	
+	<modules>
+        <module>org.eclipse.xtext.web</module>
+        <module>org.eclipse.xtext.web.servlet</module>
+        <module>org.eclipse.xtext.web.example.statemachine</module>
+        <module>org.eclipse.xtext.web.example.statemachine.ide</module>
+        <module>org.eclipse.xtext.web.statemachine.servlet</module>
+        <module>org.eclipse.xtext.web.example.hello</module>
+        <module>org.eclipse.xtext.web.example.hello.ide</module>
+        <module>org.eclipse.xtext.web.example.hello.servlet</module>
+        <module>org.eclipse.xtext.web.activator</module>
+        <module>org.eclipse.xtext.web.dsl.launguage</module>
+    </modules>
+	
 	<build>
 		<plugins>
 			<plugin>

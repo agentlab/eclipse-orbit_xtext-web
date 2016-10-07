@@ -16,27 +16,10 @@
     </parent>
     
     <modules>
-        <module>releng/</module>
-        <module>site/</module>
-        
-        <module>features/org.eclipse.xtext.web.feature</module>
-        
-        <module>plugins/org.eclipse.xtext.web</module>
-        <module>plugins/org.eclipse.xtext.web.servlet</module>
-        <module>plugins/org.eclipse.xtext.web.example.statemachine</module>
-        <module>plugins/org.eclipse.xtext.web.example.statemachine.ide</module>
-        <module>plugins/org.eclipse.xtext.web.statemachine.servlet</module>
-        <module>plugins/org.eclipse.xtext.web.example.hello</module>
-        <module>plugins/org.eclipse.xtext.web.example.hello.ide</module>
-        <module>plugins/org.eclipse.xtext.web.example.hello.servlet</module>
-        <module>plugins/org.eclipse.xtext.web.activator</module>
-        <module>plugins/org.eclipse.xtext.web.dsl.launguage</module>
-        
-        
-        <!--<module>../../features/org.eclipse.xtext.web.server.feature</module>
-         <module>../../features/org.eclipse.xtext.web.server.sdk.feature</module>
-         <module>../org.eclipse.xtext.web.server.product</module>
-         <module>../org.eclipse.xtext.web.repository</module>-->
+        <module>releng</module>
+        <module>site</module>
+        <module>features</module>
+        <module>plugins</module>
     </modules>
     
     <build>

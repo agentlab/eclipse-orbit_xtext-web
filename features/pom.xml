@@ -26,8 +26,39 @@
     
     <modules>
         <module>org.eclipse.xtext.web.feature</module>
-<!--        <module>org.eclipse.xtext.web.feature.hello</module>-->
-<!--        <module>org.eclipse.xtext.web.feature.statemachine</module>-->
+        <module>org.eclipse.xtext.web.feature.hello</module>
+        <module>org.eclipse.xtext.web.feature.statemachine</module>
     </modules>
     
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho.extras</groupId>
+				<artifactId>tycho-source-feature-plugin</artifactId>
+<!--				<executions>
+					<execution>
+						<phase>package</phase>
+						<id>source-feature</id>
+						<goals>
+							<goal>source-feature</goal>
+						</goals>
+						<configuration>
+							<excludes>
+								<plugin id="org.eclipse.jgit.lfs"/>
+								<plugin id="org.json"/>
+								<feature id="org.eclipse.jgit.commands.feature"/>
+								<plugin id="org.apache.httpcomponents.httpclient"/>
+								<plugin id="org.apache.httpcomponents.httpcore"/>
+								<plugin id="org.apache.commons.io"/>
+								<plugin id="com._1c.cloud.edt.application"/>
+								<plugin id="ch.qos.logback.classic"/>
+								<plugin id="ch.qos.logback.core"/>
+								<plugin id="ch.qos.logback.slf4j"/>
+							</excludes>
+						</configuration>
+					</execution>
+				</executions>-->
+			</plugin>
+		</plugins>
+	</build>
 </project>
