@@ -16,7 +16,8 @@ class Activator implements BundleActivator {
 	}
 
 	override stop(BundleContext context) throws Exception {
-		throw new UnsupportedOperationException("TODO: auto-generated method stub")
+//		throw new UnsupportedOperationException("TODO: auto-generated method stub")
+		context.ungetService(context.getServiceReference(ContextHandler.name))
 	}
 
 }

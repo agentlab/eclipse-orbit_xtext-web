@@ -15,6 +15,6 @@ class WebSetup {
 	}
 
 	public def synchronized void unsetDsl(IExecutorServiceProvider service) {
-
+		this.service = null
 	}
 }

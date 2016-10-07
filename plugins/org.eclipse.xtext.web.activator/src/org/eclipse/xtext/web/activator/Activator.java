@@ -61,6 +61,7 @@ public class Activator implements BundleActivator {
 	 * @see org.osgi.framework.BundleActivator#stop(org.osgi.framework.BundleContext)
 	 */
 	public void stop(BundleContext bundleContext) throws Exception {
+		bundleContext.ungetService(context.getServiceReference(ContextHandler.class.getName()));
 		Activator.context = null;
 	}
 
