@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+    
+    <!-- Setup -->
+<!--    <feature url="features/org.eclipse.xtext.web.feature.statemachine_1.0.0.qualifier.jar" id="org.eclipse.xtext.web.feature.statemachine" version="1.0.0.qualifier" >-->
+<!--    </feature>-->
+
+    <feature id="org.eclipse.xtext.web.statemachine.feature"/>
+    <feature id="org.eclipse.xtext.web.statemachine.feature.source"/>
+
+</site>

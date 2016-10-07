@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="org.eclipse.xtext.web.feature.statemachine"
-      label="Statemachine"
+      id="org.eclipse.xtext.web.hello.feature"
+      label="Feature"
       version="1.0.0.qualifier">
 
    <description url="http://www.example.com/description">
@@ -17,21 +17,21 @@
    </license>
 
    <plugin
-         id="org.eclipse.xtext.web.example.statemachine"
+         id="org.eclipse.xtext.web.example.hello"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.xtext.web.example.statemachine.ide"
+         id="org.eclipse.xtext.web.example.hello.ide"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.xtext.web.statemachine.servlet"
+         id="org.eclipse.xtext.web.example.hello.servlet"
          download-size="0"
          install-size="0"
          version="0.0.0"

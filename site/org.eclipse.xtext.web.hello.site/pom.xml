@@ -20,7 +20,7 @@
     </parent>
     
     <groupId>org.eclipse.xtext.web</groupId>
-    <artifactId>org.eclipse.xtext.web.site.hello</artifactId>
+    <artifactId>org.eclipse.xtext.web.hello.site</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>eclipse-repository</packaging>
     

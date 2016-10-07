@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+    
+    <!-- Setup -->
+<!--    <feature url="features/org.eclipse.xtext.web.hello.feature_1.0.0.qualifier.jar" id="org.eclipse.xtext.web.hello.feature" version="1.0.0.qualifier" >-->
+<!--    </feature>-->
+
+    <feature id="org.eclipse.xtext.web.hello.feature"/>
+    <feature id="org.eclipse.xtext.web.hello.feature.source"/>
+
+</site>
